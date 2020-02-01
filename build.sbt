@@ -16,7 +16,8 @@ libraryDependencies ++= Seq(
   ws,
   specs2 % Test,
   guice,
-  "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % "test"
+  "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % "test",
+  "net.debasishg" %% "redisclient" % "3.20"
 )
 
 unmanagedResourceDirectories in Test += baseDirectory(_ / "target/web/public/test").value
